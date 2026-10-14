@@ -3,9 +3,7 @@
 #define MAX 10
 
 int arr[MAX];
-int size = 0;   /* number of elements currently stored */
-
-/* DISPLAY: show all elements with their positions */
+int size = 0;   
 void display() {
     int i;
 
@@ -20,7 +18,6 @@ void display() {
     }
 }
 
-/* TRAVERSE: visit every element from first to last */
 void traverse() {
     int i;
 
@@ -36,7 +33,7 @@ void traverse() {
     printf("\n");
 }
 
-/* INSERT: add a value at a given position (shifts elements right) */
+
 void insert(int pos, int value) {
     int i;
 
@@ -57,7 +54,7 @@ void insert(int pos, int value) {
     printf("%d inserted at index %d.\n", value, pos);
 }
 
-/* DELETE: remove the value at a given position (shifts elements left) */
+
 void delete_at(int pos) {
     int i, removed;
 
@@ -78,7 +75,6 @@ void delete_at(int pos) {
     printf("%d deleted from index %d.\n", removed, pos);
 }
 
-/* SEARCH: linear search for a value */
 void search(int value) {
     int i, found = 0;
 
@@ -93,7 +89,6 @@ void search(int value) {
     }
 }
 
-/* UPDATE: replace the value at a given position */
 void update(int pos, int value) {
     int old;
 
